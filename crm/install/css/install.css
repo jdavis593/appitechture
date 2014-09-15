@@ -1,0 +1,76 @@
+
+.license-field {
+	width: 100%;
+}
+
+.point-lbl {
+	cursor: pointer;
+}
+
+select[name="user-lang"] {
+	width: 200px;
+}
+
+.subpanel {
+	text-align: left ;
+}
+
+.install-body {
+	padding-top: 30px;
+}
+.btn-panel {
+	margin-top: 20px;
+}
+.panel-title {
+	text-align: center;
+}
+
+.loading-icon {
+    background-image: url("../img/loading-icon.gif");
+    background-repeat: no-repeat;
+    height: 31px;
+    width: 31px;
+	float: right;
+}
+
+.devices {
+	width: 50%;
+	height: 50%;
+}
+
+.panel-body {
+	min-height: 400px;
+}
+
+.panel-body .panel-body {
+	min-height: 50px;
+}
+
+.host-name-c {
+	width: 65%;
+	float: left;
+}
+
+.port-c {
+	width: 30%;
+	float: right;
+}
+
+.label-description {
+	line-height: 24px;
+	height: 33px;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 14px 0 5px;
+}
+.semicolon-sign-c {
+	text-align: center;
+	width: 4%;
+	float: left;
+	
+}
+
+.semicolon-sign {
+	margin-top: 5px;
+}
+

@@ -1,0 +1,92 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true
+        },
+        "status": {
+            "type": "enum",
+            "options": ["Not Started", "Started", "Completed", "Canceled"],
+            "view": "Fields.EnumStyled",
+            "style": {
+            	"Completed": "success",
+            	"Canceled": "danger"
+            }
+        },
+        "priority": {
+            "type": "enum",
+            "options": ["Low", "Normal", "High", "Urgent"],
+            "default": "Normal"
+        },
+        "dateStart": {
+            "type": "datetime",
+            "before": "dateEnd"
+        },
+        "dateEnd": {
+            "type": "datetime",
+            "after": "dateStart"
+        },
+        "isOverdue": {
+        	"type": "base",
+        	"db": false,
+        	"view": "Crm:Task.Fields.IsOverdue"
+        },
+        "description": {
+            "type": "text"
+        },
+        "parent": {
+            "type": "linkParent"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": true
+        },
+        "teams": {
+            "type": "linkMultiple"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam"
+        },
+        "parent": {
+            "type": "belongsToParent",
+            "entityList": ["Account", "Contact", "Lead", "Opportunity", "Case"],
+            "foreign": "tasks"
+        }
+    },
+    "collection": {
+    	"sortBy": "createdAt",
+    	"asc": false
+    }
+}

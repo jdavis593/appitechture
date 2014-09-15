@@ -1,0 +1,21 @@
+{
+   "params":[
+      {
+         "name":"required",
+         "type":"bool",
+         "default":false
+      }
+   ],
+   "actualFields":[
+      "id",
+      "type"
+   ],
+   "notActualFields":[
+      "name"
+   ],
+   "filter": true,
+   "notCreatable": true,
+   "fieldDefs":{
+      "notStorable":true
+   }
+}

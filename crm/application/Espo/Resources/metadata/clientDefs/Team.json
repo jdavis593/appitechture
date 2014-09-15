@@ -1,0 +1,11 @@
+{
+   "relationshipPanels":{
+      "users":{
+         "create":false
+      }
+   },
+   "recordViews":{
+      "detail":"Team.Detail",
+      "edit":"Team.Edit"
+   }   
+}

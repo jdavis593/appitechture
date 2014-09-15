@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "account": {
+            "type": "link",
+            "disabled": true
+        }
+    },
+    "links": {
+        "account": {
+            "type": "belongsTo",
+            "entity": "Account"
+        },
+        "parent": {
+            "entityList": ["Account", "Lead", "Opportunity", "Case"]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+	"fields": {
+		"name": "Name",
+		"parent": "Parent",
+		"status": "Status",
+		"dateStart": "Date Start",
+		"dateEnd": "Date Due",
+		"priority": "Priority",
+		"description": "Description",
+		"isOverdue": "Is Overdue"
+	},
+	"links": {
+	},
+	"options": {
+		"status": {
+			"Not Started": "Not Started",
+			"Started": "Started",
+			"Completed": "Completed",
+			"Canceled": "Canceled"
+		},
+		"priority" : {
+			"Low": "Low",
+			"Normal": "Normal",
+			"High": "High",
+			"Urgent": "Urgent"
+		}
+	},
+	"labels": {
+		"Create Task": "Create Task"
+	},
+	"presetFilters": {
+		"active": "Active",
+		"completed": "Completed",
+		"todays": "Today's",
+		"overdue": "Overdue"
+	}
+}

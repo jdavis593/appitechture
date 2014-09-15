@@ -1,0 +1,13 @@
+[
+	{
+		"label":"",
+		"rows":[
+			[{"name":"dateSent"}],
+			[{"name":"from"}],
+			[{"name":"to"}],
+			[{"name":"name"}],			
+			[{"name":"body"}],
+			[{"name":"attachments"}]
+		]
+	}
+]

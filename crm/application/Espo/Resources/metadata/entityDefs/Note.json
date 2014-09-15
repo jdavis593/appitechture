@@ -1,0 +1,88 @@
+{
+    "fields": {
+        "post": {
+            "type": "text"
+        },
+        "data": {
+            "type": "text"
+        },
+        "type": {
+            "type": "varchar"
+        },
+        "parent": {
+            "type": "linkParent"
+        },
+        "attachments": {
+            "type": "linkMultiple",
+            "view": "Stream.Fields.AttachmentMultiple"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "attachments": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "relationName": "NoteAttachments",
+            "foreign": "parent"
+        },
+        "parent": {
+            "type": "belongsToParent",
+            "foreign": "notes"
+        }
+    },
+    "collection": {
+    	"sortBy": "createdAt",
+    	"asc": false
+    },
+    "streamRelated": {
+		"Account": [
+			"meetings",
+			"calls",
+			"tasks",
+			"opportunities"
+		],
+		"Contact": [
+			"meetings",
+			"calls",
+			"tasks"
+		],
+		"Lead": [
+			"meetings",
+			"calls",
+			"tasks"
+		],
+		"Opportunity": [
+			"meetings",
+			"calls",
+			"tasks"
+		],
+		"Case": [
+			"meetings",
+			"calls",
+			"tasks"
+		]
+	}
+}

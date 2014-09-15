@@ -1,0 +1,63 @@
+{
+	"fields": {
+		"useCache": "Benutzer Cache",
+		"dateFormat": "Datumsformat",
+		"timeFormat": "Zeitformat",
+		"timeZone": "Zeitzone",
+		"weekStart": "Erster Tag der Woche",
+		"thousandSeparator": "Tausender Trennzeichen",
+		"decimalMark": "Dezimaltrennzeichen",
+		"defaultCurrency": "Standardwährung",
+		"currencyList": "Währungsliste",
+		"language": "Sprache",
+		
+		"companyLogo": "Firmenlogo",
+		
+		"smtpServer": "Server",
+		"smtpPort": "Port",
+		"smtpAuth": "Autorisierung",
+		"smtpSecurity": "Sicherheit",
+		"smtpUsername": "Benutzername",
+		"emailAddress": "E-Mail",
+		"smtpPassword": "Passwort",
+		"outboundEmailFromName": "Von Name",
+		"outboundEmailFromAddress": "Von Adresse",
+		"outboundEmailIsShared": "Kann von allen Benutzern verwendet werden",
+		
+		"recordsPerPage": "Datensätze pro Seite",
+		"recordsPerPageSmall": "Records Per Page (Small)",		
+		"tabList": "Reiter Liste",
+		"quickCreateList": "Liste Schnellerstellung",
+		
+		"exportDelimiter": "Export Trennzeichen",
+		
+		"authenticationMethod": "Authentication Method",
+		"ldapHost": "Host",
+		"ldapPort": "Port",
+		"ldapAuth": "Autorisierung",
+		"ldapUsername": "Benutzername",
+		"ldapPassword": "Passwort",
+		"ldapBindRequiresDn": "Bind Requires Dn",
+		"ldapBaseDn": "Base Dn",
+		"ldapAccountCanonicalForm": "Account Canonical Form",
+		"ldapAccountDomainName": "Account Domain Name",
+		"ldapTryUsernameSplit": "Try Username Split",
+		"ldapCreateEspoUser": "Create User in EspoCRM",
+		"ldapSecurity": "Sicherheit",
+		"ldapUserLoginFilter": "User Login Filter",
+		"ldapAccountDomainNameShort": "Account Domain Name Short",
+		"ldapOptReferrals": "Opt Referrals"
+	},
+	"options": {
+		"weekStart": {
+			"0": "Sonntag",
+			"1": "Montag"
+		}
+	},
+	"labels": {
+		"System": "System",
+		"Locale": "Lokale Einstellungen",
+		"SMTP": "SMTP",
+		"Configuration": "Konfiguration"
+	}
+}

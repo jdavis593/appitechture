@@ -1,0 +1,28 @@
+[
+	{
+		"label":"",
+		"rows":[
+			[
+				{
+					"name":"from",
+					"view": "Crm:Email.Fields.FromAddress"
+				},
+				{"name":"cc"}			
+			],
+			[
+				{"name":"to"},
+				{"name":"bcc"}
+			],
+			[{"name":"name","fullWidth":true}],
+			[
+				false,
+				{
+					"name":"selectTemplate",
+					"view":"Email.Fields.SelectTemplate" 
+				}
+			],
+			[{"name":"body","fullWidth":true}],
+			[{"name":"attachments"},{"name":"isHtml"}]
+		]
+	}
+]

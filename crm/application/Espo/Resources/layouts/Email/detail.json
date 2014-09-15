@@ -1,0 +1,14 @@
+[
+	{
+		"label":"",
+		"rows":[
+			[{"name":"status"},false],
+			[{"name":"dateSent"}, {"name":"parent"}],
+			[{"name":"from"},{"name":"cc"}],
+			[{"name":"to"},{"name":"bcc"}],
+			[{"name":"name","fullWidth":true}],
+			[{"name":"body","fullWidth":true}],
+			[{"name":"attachments"},{"name":"isHtml"}]
+		]
+	}
+]

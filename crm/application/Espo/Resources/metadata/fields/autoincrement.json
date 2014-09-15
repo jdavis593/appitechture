@@ -1,0 +1,11 @@
+{
+   "params":[
+   ],
+   "notCreatable": true,
+   "filter": true,
+   "fieldDefs":{
+      "type":"int",
+      "autoincrement":true,
+      "unique":true
+   }
+}

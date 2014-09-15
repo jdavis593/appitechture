@@ -1,0 +1,55 @@
+[
+	{
+		"label":"Main",
+		"rows":[
+			[
+				{"name":"name"},
+				{"name":"status"}
+			],
+			[
+				{"name":"team"}
+				
+			],
+			[
+				{"name":"assignToUser"}
+			]
+		]
+	},
+	{
+		"label":"IMAP",
+		"rows":[
+			[
+				{"name":"host"},{"name":"ssl"}
+			],
+			[
+				{"name":"port"},false
+			],
+			[
+				{"name":"monitoredFolders"},{"name":"username"}
+			],
+			[
+				{"name":"trashFolder"},{"name":"password"}
+			]
+		]
+	},
+	{
+		"label":"Actions",
+		"rows": [
+			[
+				{"name":"createCase"},{"name":"reply"}
+			],
+			[
+				{"name":"caseDistribution"},
+				{"name":"replyEmailTemplate"}
+			],
+			[
+				false,
+				{"name":"replyFromAddress"}
+			],
+			[
+				false,
+				{"name":"replyFromName"}
+			]
+		]
+	}
+]
